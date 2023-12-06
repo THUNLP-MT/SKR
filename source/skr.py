@@ -81,14 +81,8 @@ for idx, test_case in enumerate(test_data):
 
     prediction = test_case[option]
     ground_truths = test_case['Gold answer']
-    if option in ['zero_shot_gpt3', 'few_shot_gpt3']:
-        prediction = prediction.replace('\n', '').strip()
-    elif option in ['chain_of_thought_gpt3', 'weighting_baseline']:
-        prediction = prediction.replace('\n', '').strip()
-        prediction = get_answer_ref(prediction,ground_truths[0].strip())
-    elif option in ['self_consistency_gpt3']:
-        prediction = get_majority_prediction(prediction)
-    
+    prediction = prediction.replace('\n', '').strip()
+    prediction = get_answer_ref(prediction,ground_truths[0].strip())
     cot.append(metric_max_over_ground_truths(exact_match_score, prediction, ground_truths))
     exact_match += metric_max_over_ground_truths(
         exact_match_score, prediction, ground_truths)
@@ -109,14 +103,8 @@ for idx, test_case in enumerate(test_data2):
     total += 1
     prediction = test_case[option]
     ground_truths = test_case['Gold answer']
-    if option in ['zero_shot_gpt3', 'few_shot_gpt3']:
-        prediction = prediction.replace('\n', '').strip()
-    elif option in ['chain_of_thought_gpt3', 'weighting_baseline']:
-        prediction = prediction.replace('\n', '').strip()
-        prediction = get_answer_ref(prediction,ground_truths[0].strip())
-    elif option in ['self_consistency_gpt3']:
-        prediction = get_majority_prediction(prediction)
-    
+    prediction = prediction.replace('\n', '').strip()
+    prediction = get_answer_ref(prediction,ground_truths[0].strip())
     cot_ir.append(metric_max_over_ground_truths(exact_match_score, prediction, ground_truths))
     exact_match += metric_max_over_ground_truths(
         exact_match_score, prediction, ground_truths)
