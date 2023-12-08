@@ -1,5 +1,5 @@
 # Overview
-The repo contains the codes for [**Self-Knowledge Guided Retrieval Augmentation for Large Language Models**](https://aclanthology.org/2023.findings-emnlp.691.pdf) (EMNLP Findings 2023)
+[**Self-Knowledge Guided Retrieval Augmentation for Large Language Models**](https://aclanthology.org/2023.findings-emnlp.691.pdf) (EMNLP Findings 2023)
 ![Method_overview](figs/skr.png)
 
 ## Data
@@ -26,13 +26,7 @@ The Temporal dataset we use is in the fold `data/`.
 ```bibtex
 @inproceedings{wang-etal-2023-self-knowledge,
     title = "Self-Knowledge Guided Retrieval Augmentation for Large Language Models",
-    author = "Wang, Yile  and
-      Li, Peng  and
-      Sun, Maosong  and
-      Liu, Yang",
-    editor = "Bouamor, Houda  and
-      Pino, Juan  and
-      Bali, Kalika",
+    author = "Wang, Yile  and Li, Peng  and Sun, Maosong  and Liu, Yang",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
     month = dec,
     year = "2023",
