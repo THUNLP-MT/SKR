@@ -1,5 +1,5 @@
 # Overview
-The repo contains the codes for **[Self-Knowledge Guided Retrieval Augmentation for Large Language Models]**(https://aclanthology.org/2023.findings-emnlp.691.pdf) (EMNLP Findings 2023)
+The repo contains the codes for [**Self-Knowledge Guided Retrieval Augmentation for Large Language Models**](https://aclanthology.org/2023.findings-emnlp.691.pdf) (EMNLP Findings 2023)
 ![Method_overview](figs/skr.png)
 
 ## Data
